@@ -63,8 +63,8 @@ QUIT
 221 Closing connection  
 Connection closed by foreign host.   
 
-**Person.java**: Representation of a person for whom we want to send an e-mail. Contains the e-mail address as a private attribut.
-**Group.java**: A group of persons.
+**Person.java**: Representation of a person for whom we want to send an e-mail. Contains the e-mail address as a private attribut.  
+**Group.java**: A group of persons.  
 **Message.java**: The message we want to send.
 
 ###**Mock SMTP Server Installation**
