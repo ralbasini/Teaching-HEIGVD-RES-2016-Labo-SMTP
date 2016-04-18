@@ -75,4 +75,4 @@ A Mocker Server allows to mock any server or service that you connect to over SM
 
 Authors
 -------------
-Roamain Albasini & Dardan Selimi
+Romain Albasini & Dardan Selimi
