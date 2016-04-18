@@ -41,27 +41,29 @@ The composition of a group is "One sender and two receivers". So three e-mail ad
  
 **SmtpClient.java**: The SMTP client. This class can connect to a SMTP server and send messages. The protocol used in our implementation is the one recommended by RFC standards:
 
->Example:
-telnet smtp.xxxx.xxxx/IP address 25 
-Connected to smtp.xxxx.xxxx./IP address
-220 smtp.xxxx.xxxx SMTP Ready
-EHLO client
-250-smtp.xxxx.xxxx
-250-PIPELINING
-250 8BITMIME       
-MAIL FROM: <author@yyyy.yyyy>
-250 Sender ok
-RCPT TO: <dest@xxxx.xxxx>
-250 Recipient ok.
-DATA
-354 Enter mail, end with "." 
-Subject: Test
-Corps du texte
-.
-250 Ok
-QUIT
-221 Closing connection
-Connection closed by foreign host. 
+>Example:  
+telnet smtp.xxxx.xxxx/IP address 25  
+Connected to smtp.xxxx.xxxx./IP address  
+220 smtp.xxxx.xxxx SMTP Ready  
+EHLO client  
+250-smtp.xxxx.xxxx  
+250-PIPELINING  
+250 8BITMIME         
+MAIL FROM: <author@yyyy.yyyy>  
+250 Sender ok  
+RCPT TO: <dest@xxxx.xxxx>  
+250 Recipient ok.  
+DATA  
+354 Enter mail, end with "."   
+Subject: Test  
+  
+Corps du texte  
+  
+.  
+250 Ok  
+QUIT  
+221 Closing connection  
+Connection closed by foreign host.   
 
 **Person.java**: Representation of a person for whom we want to send an e-mail. Contains the e-mail address as a private attribut.
 **Group.java**: A group of persons.
