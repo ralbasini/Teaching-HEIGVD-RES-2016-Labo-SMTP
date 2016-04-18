@@ -17,7 +17,7 @@ A simple SMTP client which goal is to send e-mails to a list of addresses. A moc
 ###**Installation**
 **Step 1**: Clone the repository into yours.  
 **Step 2**: Launch the "MockMock.jar". Instructions can be found in the section "Mock SMTP Server Installation"  
-**Step 3**: Move the files *appconfig.properties*, *emails.txt*, *messages.txt* to the repertory where MailRobot.jar is located. Example: c:\test\MailRobot.jar -> config files must be placed into c:\test\. Edit the files at your convenience with the wanted parameters.  
+**Step 3**: Move the files *appconfig.properties*, *emails.txt*, *messages.txt* to the repertory where MailRobot.jar is located. Example: c:\test\MailRobot.jar -> config files must be placed into c:\test\. Those files must be edited according to the will of the user.    
 **Step 4**: Compile and  the "MailRobot.jar" using "java -jar MailRobot.jar" in your prompt.  
 
 ###**Configuration**
@@ -31,7 +31,7 @@ The composition of a group is "One sender and two receivers". So three e-mail ad
  - field : messages --> messages.txt is the file in which the textual content of the e-mails to send is stored. Attention, one message only is possible with our implementation.
 
 ###**Implementation**
- Please, have a look at the figure stored in the *figures* repertory. The file *diagram.png* contains the class diagram of the project.
+ Please, have a look at the figure stored in the *figures * repertory. The file *diagram.png* contains the class diagram of the project.
    ![class diagram](/figures/diagram.png)
  **Organizer.java**: Important class in which all the necessary information are collected from the different files. 
  Class functions: 
@@ -56,7 +56,9 @@ RCPT TO: <dest@xxxx.xxxx>
 DATA  
 354 Enter mail, end with "."   
 Subject: Test  
-Corps du texte  
+>
+Corps du texte 
+> 
 .  
 250 Ok  
 QUIT  
@@ -65,7 +67,7 @@ Connection closed by foreign host.
 
 **Person.java**: Representation of a person for whom we want to send an e-mail. Contains the e-mail address as a private attribut.  
 **Group.java**: A group of persons.  
-**Message.java**: The message we want to send.
+**Message.java**: The message we want to send.  
 
 ###**Mock SMTP Server Installation**
  A jar file is included in the root of the repo. The command to execute the program in any promp is "java -jar MockMock.jar -p 25", where -p is the port used by the server. Be carreful, you should always have the lastest java version installed on your system.
