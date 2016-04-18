@@ -17,7 +17,7 @@ A simple SMTP client which goal is to send e-mails to a list of addresses. A moc
 ###**Installation**
 **Step 1**: Clone the repository into yours.  
 **Step 2**: Launch the "MockMock.jar". Instructions can be found in the section "Mock SMTP Server Installation"  
-**Step 3**: Move the files *appconfig.properties*, *emails.txt*, *messages.txt* to the repertory where MailRobot.jar is located. Example: c:\test\MailRobot.jar -> config files must be placed into c:\test\  
+**Step 3**: Move the files *appconfig.properties*, *emails.txt*, *messages.txt* to the repertory where MailRobot.jar is located. Example: c:\test\MailRobot.jar -> config files must be placed into c:\test\. Edit the files at your convenience with the wanted parameters.  
 **Step 4**: Compile and  the "MailRobot.jar" using "java -jar MailRobot.jar" in your prompt.  
 
 ###**Configuration**
