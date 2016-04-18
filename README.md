@@ -17,24 +17,21 @@ A simple SMTP client which goal is to send e-mails to a list of addresses. A moc
 ###**Installation**
 **Step 1**: Clone the repository into yours.  
 **Step 2**: Launch the "MockMock.jar". Instructions can be found in the section "Mock SMTP Server Installation"  
-**Step 3**: Move the files appconfig.properties, emails.txt, messages.txt to the repertory where MailRobot.jar is   located. Example: c:\test\MailRobot.jar -> must be placed into c:\test\  
+**Step 3**: Move the files *appconfig.properties*, *emails.txt*, *messages.txt* to the repertory where MailRobot.jar is located. Example: c:\test\MailRobot.jar -> config files must be placed into c:\test\  
 **Step 4**: Compile and  the "MailRobot.jar" using "java -jar MailRobot.jar" in your prompt.  
 
 ###**Configuration**
 > ***appconfig.properties*** is the file in which all the configuration propreties are stored. 
 >
- - filed : smtpServerAddress --> localhost by default but it can be edited.
- - filed : smtpServerAddress --> localhost by default but it can be
-   edited. 
- - filed : smtpServerPort   --> Cannot be edited since it is the   assigned port of the SMTP protocol. 
- - filed : numberOfGroups --> Depends on the number of e-mails you want to use. 
+ - field : smtpServerAddress --> localhost by default but it can be edited.  
+ - field : smtpServerPort   --> Cannot be edited since it is the   assigned port of the SMTP protocol. 
+ - field : numberOfGroups --> Depends on the number of e-mails you want to use. 
 The composition of a group is "One sender and two receivers". So three e-mail addresses means  one group. For example, to be able to send e-mails to two groups, emails.txt must contain at least six e-mail adrresses.
-
-> ***emails.txt*** is the file in which the list of e-mail addresses is stored.
-> ***messages.txt*** is the file in which the textual content of the e-mails to send is stored. Attention, one message only is possible with our implementation.
+ - field : emails --> emails.txt is the file in which the list of e-mail addresses is stored.
+ - field : messages --> messages.txt is the file in which the textual content of the e-mails to send is stored. Attention, one message only is possible with our implementation.
 
 ###**Implementation**
- Please, have a look at the figure stored in the reperotry *figures *. the file diagram.png contains the class diagram of the project.
+ Please, have a look at the figure stored in the *figures * repertory. The file *diagram.png* contains the class diagram of the project.
    ![class diagram](/figures/diagram.png)
  **Organizer.java**: Important class in which all the necessary information are collected from the different files. 
  Class functions: 
@@ -71,8 +68,10 @@ Connection closed by foreign host.
 **Message.java**: The message we want to send.
 
 ###**Mock SMTP Server Installation**
- A jar file is included in root of the repo. The command to execute the program in any promp is "java -jar MockMock.jar -p 25", where -p is the port used by the server. Be carreful, you should always have the lastest java version installed on your system.
+ A jar file is included in the root of the repo. The command to execute the program in any promp is "java -jar MockMock.jar -p 25", where -p is the port used by the server. Be carreful, you should always have the lastest java version installed on your system.
 
+###**Mock SMTP Server Information**
+A Mocker Server allows to mock any server or service that you connect to over SMTP (in our case). It can easily recreate all types of responses for SMTP services to test applications easily and efficiently.
 
 Authors
 -------------
