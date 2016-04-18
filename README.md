@@ -31,13 +31,13 @@ The composition of a group is "One sender and two receivers". So three e-mail ad
  - field : messages --> messages.txt is the file in which the textual content of the e-mails to send is stored. Attention, one message only is possible with our implementation.
 
 ###**Implementation**
- Please, have a look at the figure stored in the *figures * repertory. The file *diagram.png* contains the class diagram of the project.
+ Please, have a look at the figure stored in the *figures* repertory. The file *diagram.png* contains the class diagram of the project.
    ![class diagram](/figures/diagram.png)
  **Organizer.java**: Important class in which all the necessary information are collected from the different files. 
- Class functions: 
- -- readMessages() open the file *message.txt* in which the message to send is stored. 
- -- readEmails() open the *email.txt* file where the list of e-mail address is stored
- -- generateGroups() creates the wanted number of groups. The number of groups depends on the number of e-mail address and the field numberOfGroups of the configuration file *appconfig.properties*
+ Class functions:  
+ -- readMessages() open the file *message.txt* in which the message to send is stored.   
+ -- readEmails() open the *email.txt* file where the list of e-mail address is stored.  
+ -- generateGroups() creates the wanted number of groups. The number of groups depends on the number of e-mail address and the field numberOfGroups of the configuration file *appconfig.properties*.  
  
 **SmtpClient.java**: The SMTP client. This class can connect to a SMTP server and send messages. The protocol used in our implementation is the one recommended by RFC standards:
 
