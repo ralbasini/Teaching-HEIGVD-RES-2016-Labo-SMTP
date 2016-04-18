@@ -56,7 +56,6 @@ RCPT TO: <dest@xxxx.xxxx>
 DATA  
 354 Enter mail, end with "."   
 Subject: Test  
-  
 Corps du texte  
   
 .  
