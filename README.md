@@ -31,7 +31,7 @@ The composition of a group is "One sender and two receivers". So three e-mail ad
  - field : messages --> messages.txt is the file in which the textual content of the e-mails to send is stored. Attention, one message only is possible with our implementation.
 
 ###**Implementation**
- Please, have a look at the figure stored in the *figures * repertory. The file *diagram.png* contains the class diagram of the project.
+ Please, have a look at the figure stored in the *figures* repertory. The file *diagram.png* contains the class diagram of the project.
    ![class diagram](/figures/diagram.png)
  **Organizer.java**: Important class in which all the necessary information are collected from the different files. 
  Class functions: 
