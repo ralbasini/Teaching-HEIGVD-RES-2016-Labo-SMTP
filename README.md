@@ -15,10 +15,10 @@ JAVA 8, MockMock Server, Netbeans 8.0.2
 A simple SMTP client which goal is to send e-mails to a list of addresses. A mock SMTP server is used. The main purpose of this project is to implement a SMTP client.
 
 ###**Installation**
-**Step 1**: Clone the repository into yours.
-**Step 2**: Launch the "MockMock.jar". Instructions can be found in the section "Mock SMTP Server Installation"
-**Step 3**: Move the files appconfig.properties, emails.txt, messages.txt to the repertory where MailRobot.jar is   located. Example: c:\test\MailRobot.jar -> must be placed into c:\test\
-**Step 4**: Compile and  the "MailRobot.jar" using "java -jar MailRobot.jar" in your prompt.
+**Step 1**: Clone the repository into yours.  
+**Step 2**: Launch the "MockMock.jar". Instructions can be found in the section "Mock SMTP Server Installation"  
+**Step 3**: Move the files appconfig.properties, emails.txt, messages.txt to the repertory where MailRobot.jar is   located. Example: c:\test\MailRobot.jar -> must be placed into c:\test\  
+**Step 4**: Compile and  the "MailRobot.jar" using "java -jar MailRobot.jar" in your prompt.  
 
 ###**Configuration**
 > ***appconfig.properties*** is the file in which all the configuration propreties are stored. 
