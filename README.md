@@ -11,14 +11,14 @@ Repository for the SMTP client lab.
 
 JAVA 8, MockMock Server, Netbeans 8.0.2
 
-###**Descrption**
+###**Description**
 A simple SMTP client which goal is to send e-mails to a list of addresses. A mock SMTP server is used. The main purpose of this project is to implement a SMTP client.
 
 ###**Installation**
 **Step 1**: Clone the repository into yours.  
 **Step 2**: Launch the "MockMock.jar". Instructions can be found in the section "Mock SMTP Server Installation"  
 **Step 3**: Move the files *appconfig.properties*, *emails.txt*, *messages.txt* to the repertory where MailRobot.jar is located. Example: c:\test\MailRobot.jar -> config files must be placed into c:\test\. Those files must be edited according to the will of the user.    
-**Step 4**: Compile and  the "MailRobot.jar" using "java -jar MailRobot.jar" in your prompt.  
+**Step 4**: Run the "MailRobot.jar" using "java -jar MailRobot.jar" in your prompt.  
 
 ###**Configuration**
 > ***appconfig.properties*** is the file in which all the configuration propreties are stored. 
@@ -26,7 +26,7 @@ A simple SMTP client which goal is to send e-mails to a list of addresses. A moc
  - field : smtpServerAddress --> localhost by default but it can be edited.  
  - field : smtpServerPort   --> Cannot be edited since it is the   assigned port of the SMTP protocol. 
  - field : numberOfGroups --> Depends on the number of e-mails you want to use. 
-The composition of a group is "One sender and two receivers". So three e-mail addresses means  one group. For example, to be able to send e-mails to two groups, emails.txt must contain at least six e-mail adrresses.
+The composition of a group is "One sender and two receivers". So three e-mail addresses means  one group. For example, to be able to send e-mails to two groups, emails.txt must contain at least six e-mail addresses.
  - field : emails --> emails.txt is the file in which the list of e-mail addresses is stored.
  - field : messages --> messages.txt is the file in which the textual content of the e-mails to send is stored. Attention, one message only is possible with our implementation.
 
@@ -36,8 +36,8 @@ The composition of a group is "One sender and two receivers". So three e-mail ad
  **Organizer.java**: Important class in which all the necessary information are collected from the different files. 
  Class functions:  
  -- readMessages() open the file *message.txt* in which the message to send is stored.   
- -- readEmails() open the *email.txt* file where the list of e-mail address is stored.  
  -- generateGroups() creates the wanted number of groups. The number of groups depends on the number of e-mail address and the field numberOfGroups of the configuration file *appconfig.properties*.  
+ -- readEmails() open the *email.txt* file where the list of e-mail address is stored.  
  
 **SmtpClient.java**: The SMTP client. This class can connect to a SMTP server and send messages. The protocol used in our implementation is the one recommended by RFC standards:
 

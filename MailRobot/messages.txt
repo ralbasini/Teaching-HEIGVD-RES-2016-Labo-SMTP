@@ -1,12 +1,24 @@
-Test numero1
-Bonjour,
-C'est le test 1.
+Merci !
+Ce message pour vous remercier de la soiree hier soir. Cynthia a trouve le Stroganoff fabuleux!
 
-Salut
+A bientot !
+
+Jean-Marc
 ====
-Test numero 2
+Demission
 Bonjour,
-C'est le test2.
+Par la presente, je souhaite demissionner de mon poste de PDG.
+Merci de me verser mon parachute dore des que possible.
 
-Adieu
+Amicalement,
+
+Serge
+====
+Elections
+Bonjour,
+Je souhaite proposer ma candidature pour les elections municipales.
+
+Votez pour moi
+
+Barack Obama
 ====

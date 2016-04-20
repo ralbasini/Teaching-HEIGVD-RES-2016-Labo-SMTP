@@ -26,7 +26,7 @@ public class Group {
 
       } else {
          // Shuffles the list. If the line is commented, the first address of the group will be taken as sender
-         Collections.shuffle(persons);
+         //Collections.shuffle(persons);
          
          // First Person is choosen as sender, the rest as recipients
          sender = persons.get(0);
